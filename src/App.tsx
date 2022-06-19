@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import Borad from "./components/Board";
 import Timer from "./components/Timer";
@@ -108,7 +107,6 @@ function App() {
     }, 1000);
 
     return () => {
-      console.log("gg");
       return clearInterval(timer);
     };
   }, [time]);
